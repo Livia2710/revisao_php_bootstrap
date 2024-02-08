@@ -1,4 +1,5 @@
 <?php
+
 // Incluir a conexão com o banco de dados
 include_once "conexao.php";
 

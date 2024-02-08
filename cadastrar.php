@@ -1,8 +1,5 @@
 <?php
 
-
-<?php
-
 // Incluir a conexao com o banco de dados
 include_once "conexao.php";
 
