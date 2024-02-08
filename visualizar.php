@@ -1,6 +1,3 @@
-<!-- Digite aqui (visualizar.php) -->
-<!-- 2º Arquivo a ser digitado -->
-
 <?php
 
 //Incluir a conexão com o banco de dados;
@@ -15,10 +12,10 @@ if (!empty($id)) {
 
     // QUERY para selecionar informações do usuario e edereço associado
     $query_usuario = "SELECT usr.id, usr.nome, usr.email,
-                    ende.logradouro, ende.numero
-                    FROM usuarios AS usr 
-                    LEFT JOIN enderecos AS ende ON ende.usuario_id=usr.id
-                    WHERE usr.id=:id LIMIT 1";
+            ende.logradouro, ende.numero
+            FROM usuarios AS usr 
+            LEFT JOIN enderecos AS ende ON ende.usuario_id=usr.id
+            WHERE usr.id=:id LIMIT 1";
     $result_usuario = $conn->prepare($query_usuario);
     $result_usuario->bindParam(':id', $id);
     $result_usuario->execute();
