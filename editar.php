@@ -50,6 +50,7 @@ if (empty($dados['nome'])) {
     } else {
         $retorna = ['status' => false, 'msg'=> "<div class='alert alert-danger' role='alert'>Erro: Usuário não editado com sucesso!</div>"];
     }
+    
 
 }
 
